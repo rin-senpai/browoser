@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB847A3129D6E209003369CD /* Browoser Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DB847A3029D6E209003369CD /* Browoser Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DB847A3629D6E209003369CD /* BrowoserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A3529D6E209003369CD /* BrowoserApp.swift */; };
+		DB847A3829D6E209003369CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A3729D6E209003369CD /* ContentView.swift */; };
+		DB847A3A29D6E20A003369CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB847A3929D6E20A003369CD /* Assets.xcassets */; };
+		DB847A3D29D6E20A003369CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */; };
+		DB847A4729D6E20A003369CD /* Browoser_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A4629D6E20A003369CD /* Browoser_Watch_AppTests.swift */; };
+		DB847A5129D6E20A003369CD /* Browoser_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A5029D6E20A003369CD /* Browoser_Watch_AppUITests.swift */; };
+		DB847A5329D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A5229D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB847A3229D6E209003369CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB847A2429D6E209003369CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB847A2F29D6E209003369CD;
+			remoteInfo = "Browoser Watch App";
+		};
+		DB847A4329D6E20A003369CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB847A2429D6E209003369CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB847A2F29D6E209003369CD;
+			remoteInfo = "Browoser Watch App";
+		};
+		DB847A4D29D6E20A003369CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB847A2429D6E209003369CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB847A2F29D6E209003369CD;
+			remoteInfo = "Browoser Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB847A5929D6E20A003369CD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DB847A3129D6E209003369CD /* Browoser Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB847A2A29D6E209003369CD /* Browoser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browoser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB847A3029D6E209003369CD /* Browoser Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Browoser Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB847A3529D6E209003369CD /* BrowoserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowoserApp.swift; sourceTree = "<group>"; };
+		DB847A3729D6E209003369CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB847A3929D6E20A003369CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB847A4229D6E20A003369CD /* Browoser Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Browoser Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB847A4629D6E20A003369CD /* Browoser_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browoser_Watch_AppTests.swift; sourceTree = "<group>"; };
+		DB847A4C29D6E20A003369CD /* Browoser Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Browoser Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB847A5029D6E20A003369CD /* Browoser_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browoser_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		DB847A5229D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browoser_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB847A2D29D6E209003369CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB847A3F29D6E20A003369CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB847A4929D6E20A003369CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB847A2329D6E209003369CD = {
+			isa = PBXGroup;
+			children = (
+				DB847A3429D6E209003369CD /* Browoser Watch App */,
+				DB847A4529D6E20A003369CD /* Browoser Watch AppTests */,
+				DB847A4F29D6E20A003369CD /* Browoser Watch AppUITests */,
+				DB847A2B29D6E209003369CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB847A2B29D6E209003369CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB847A2A29D6E209003369CD /* Browoser.app */,
+				DB847A3029D6E209003369CD /* Browoser Watch App.app */,
+				DB847A4229D6E20A003369CD /* Browoser Watch AppTests.xctest */,
+				DB847A4C29D6E20A003369CD /* Browoser Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB847A3429D6E209003369CD /* Browoser Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				DB847A3529D6E209003369CD /* BrowoserApp.swift */,
+				DB847A3729D6E209003369CD /* ContentView.swift */,
+				DB847A3929D6E20A003369CD /* Assets.xcassets */,
+				DB847A3B29D6E20A003369CD /* Preview Content */,
+			);
+			path = "Browoser Watch App";
+			sourceTree = "<group>";
+		};
+		DB847A3B29D6E20A003369CD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB847A4529D6E20A003369CD /* Browoser Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB847A4629D6E20A003369CD /* Browoser_Watch_AppTests.swift */,
+			);
+			path = "Browoser Watch AppTests";
+			sourceTree = "<group>";
+		};
+		DB847A4F29D6E20A003369CD /* Browoser Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB847A5029D6E20A003369CD /* Browoser_Watch_AppUITests.swift */,
+				DB847A5229D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Browoser Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB847A2929D6E209003369CD /* Browoser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB847A5A29D6E20A003369CD /* Build configuration list for PBXNativeTarget "Browoser" */;
+			buildPhases = (
+				DB847A2829D6E209003369CD /* Resources */,
+				DB847A5929D6E20A003369CD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB847A3329D6E209003369CD /* PBXTargetDependency */,
+			);
+			name = Browoser;
+			productName = Browoser;
+			productReference = DB847A2A29D6E209003369CD /* Browoser.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		DB847A2F29D6E209003369CD /* Browoser Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB847A5629D6E20A003369CD /* Build configuration list for PBXNativeTarget "Browoser Watch App" */;
+			buildPhases = (
+				DB847A2C29D6E209003369CD /* Sources */,
+				DB847A2D29D6E209003369CD /* Frameworks */,
+				DB847A2E29D6E209003369CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Browoser Watch App";
+			productName = "Browoser Watch App";
+			productReference = DB847A3029D6E209003369CD /* Browoser Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB847A4129D6E20A003369CD /* Browoser Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB847A5D29D6E20A003369CD /* Build configuration list for PBXNativeTarget "Browoser Watch AppTests" */;
+			buildPhases = (
+				DB847A3E29D6E20A003369CD /* Sources */,
+				DB847A3F29D6E20A003369CD /* Frameworks */,
+				DB847A4029D6E20A003369CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB847A4429D6E20A003369CD /* PBXTargetDependency */,
+			);
+			name = "Browoser Watch AppTests";
+			productName = "Browoser Watch AppTests";
+			productReference = DB847A4229D6E20A003369CD /* Browoser Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB847A4B29D6E20A003369CD /* Browoser Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB847A6029D6E20A003369CD /* Build configuration list for PBXNativeTarget "Browoser Watch AppUITests" */;
+			buildPhases = (
+				DB847A4829D6E20A003369CD /* Sources */,
+				DB847A4929D6E20A003369CD /* Frameworks */,
+				DB847A4A29D6E20A003369CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB847A4E29D6E20A003369CD /* PBXTargetDependency */,
+			);
+			name = "Browoser Watch AppUITests";
+			productName = "Browoser Watch AppUITests";
+			productReference = DB847A4C29D6E20A003369CD /* Browoser Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB847A2429D6E209003369CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					DB847A2929D6E209003369CD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DB847A2F29D6E209003369CD = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					DB847A4129D6E20A003369CD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DB847A2F29D6E209003369CD;
+					};
+					DB847A4B29D6E20A003369CD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = DB847A2F29D6E209003369CD;
+					};
+				};
+			};
+			buildConfigurationList = DB847A2729D6E209003369CD /* Build configuration list for PBXProject "Browoser" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB847A2329D6E209003369CD;
+			productRefGroup = DB847A2B29D6E209003369CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB847A2929D6E209003369CD /* Browoser */,
+				DB847A2F29D6E209003369CD /* Browoser Watch App */,
+				DB847A4129D6E20A003369CD /* Browoser Watch AppTests */,
+				DB847A4B29D6E20A003369CD /* Browoser Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB847A2829D6E209003369CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB847A2E29D6E209003369CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB847A3D29D6E20A003369CD /* Preview Assets.xcassets in Resources */,
+				DB847A3A29D6E20A003369CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB847A4029D6E20A003369CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB847A4A29D6E20A003369CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB847A2C29D6E209003369CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB847A3829D6E209003369CD /* ContentView.swift in Sources */,
+				DB847A3629D6E209003369CD /* BrowoserApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB847A3E29D6E20A003369CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB847A4729D6E20A003369CD /* Browoser_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB847A4829D6E20A003369CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB847A5129D6E20A003369CD /* Browoser_Watch_AppUITests.swift in Sources */,
+				DB847A5329D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB847A3329D6E209003369CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB847A2F29D6E209003369CD /* Browoser Watch App */;
+			targetProxy = DB847A3229D6E209003369CD /* PBXContainerItemProxy */;
+		};
+		DB847A4429D6E20A003369CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB847A2F29D6E209003369CD /* Browoser Watch App */;
+			targetProxy = DB847A4329D6E20A003369CD /* PBXContainerItemProxy */;
+		};
+		DB847A4E29D6E20A003369CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB847A2F29D6E209003369CD /* Browoser Watch App */;
+			targetProxy = DB847A4D29D6E20A003369CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB847A5429D6E20A003369CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB847A5529D6E20A003369CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DB847A5729D6E20A003369CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Browoser Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Browoser;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rin-senpai.Browoser.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		DB847A5829D6E20A003369CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Browoser Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Browoser;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rin-senpai.Browoser.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		DB847A5B29D6E20A003369CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = Browoser;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rin-senpai.Browoser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DB847A5C29D6E20A003369CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_KEY_CFBundleDisplayName = Browoser;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rin-senpai.Browoser";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB847A5E29D6E20A003369CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rin-senpai.Browoser-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browoser Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Browoser Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		DB847A5F29D6E20A003369CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rin-senpai.Browoser-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Browoser Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Browoser Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		DB847A6129D6E20A003369CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rin-senpai.Browoser-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Browoser Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		DB847A6229D6E20A003369CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rin-senpai.Browoser-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Browoser Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB847A2729D6E209003369CD /* Build configuration list for PBXProject "Browoser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB847A5429D6E20A003369CD /* Debug */,
+				DB847A5529D6E20A003369CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB847A5629D6E20A003369CD /* Build configuration list for PBXNativeTarget "Browoser Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB847A5729D6E20A003369CD /* Debug */,
+				DB847A5829D6E20A003369CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB847A5A29D6E20A003369CD /* Build configuration list for PBXNativeTarget "Browoser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB847A5B29D6E20A003369CD /* Debug */,
+				DB847A5C29D6E20A003369CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB847A5D29D6E20A003369CD /* Build configuration list for PBXNativeTarget "Browoser Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB847A5E29D6E20A003369CD /* Debug */,
+				DB847A5F29D6E20A003369CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB847A6029D6E20A003369CD /* Build configuration list for PBXNativeTarget "Browoser Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB847A6129D6E20A003369CD /* Debug */,
+				DB847A6229D6E20A003369CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB847A2429D6E209003369CD /* Project object */;
+}
