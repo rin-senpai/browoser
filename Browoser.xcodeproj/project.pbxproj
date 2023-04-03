@@ -16,9 +16,6 @@
 		DB847A3829D6E209003369CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A3729D6E209003369CD /* ContentView.swift */; };
 		DB847A3A29D6E20A003369CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB847A3929D6E20A003369CD /* Assets.xcassets */; };
 		DB847A3D29D6E20A003369CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */; };
-		DB847A4729D6E20A003369CD /* Browoser_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A4629D6E20A003369CD /* Browoser_Watch_AppTests.swift */; };
-		DB847A5129D6E20A003369CD /* Browoser_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A5029D6E20A003369CD /* Browoser_Watch_AppUITests.swift */; };
-		DB847A5329D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A5229D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift */; };
 		DBFBBBA529D7FEDC00AC1F08 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFBBBA429D7FEDC00AC1F08 /* Favourite.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,10 +69,7 @@
 		DB847A3929D6E20A003369CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB847A4229D6E20A003369CD /* Browoser Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Browoser Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB847A4629D6E20A003369CD /* Browoser_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browoser_Watch_AppTests.swift; sourceTree = "<group>"; };
 		DB847A4C29D6E20A003369CD /* Browoser Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Browoser Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB847A5029D6E20A003369CD /* Browoser_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browoser_Watch_AppUITests.swift; sourceTree = "<group>"; };
-		DB847A5229D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Browoser_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DBFBBBA429D7FEDC00AC1F08 /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,8 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				DB847A3429D6E209003369CD /* Browoser Watch App */,
-				DB847A4529D6E20A003369CD /* Browoser Watch AppTests */,
-				DB847A4F29D6E20A003369CD /* Browoser Watch AppUITests */,
 				DB847A2B29D6E209003369CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,23 +139,6 @@
 				DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DB847A4529D6E20A003369CD /* Browoser Watch AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				DB847A4629D6E20A003369CD /* Browoser_Watch_AppTests.swift */,
-			);
-			path = "Browoser Watch AppTests";
-			sourceTree = "<group>";
-		};
-		DB847A4F29D6E20A003369CD /* Browoser Watch AppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DB847A5029D6E20A003369CD /* Browoser_Watch_AppUITests.swift */,
-				DB847A5229D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift */,
-			);
-			path = "Browoser Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,7 +313,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB847A4729D6E20A003369CD /* Browoser_Watch_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB847A5129D6E20A003369CD /* Browoser_Watch_AppUITests.swift in Sources */,
-				DB847A5329D6E20A003369CD /* Browoser_Watch_AppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
