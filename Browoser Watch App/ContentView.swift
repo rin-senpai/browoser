@@ -8,14 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var favourites = Favourites()
+    @State private var searchText: String = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                TextField(
+                    "",
+                    text: $searchText
+                )
+                .submitLabel(.search)
+                .overlay(alignment: .leading) {
+                    HStack {
+                        Image(systemName: "magnifyingglass").foregroundColor(.blue)
+                            .offset(x: 10, y: 0)
+                        Text("Search")
+                            .padding(.leading, 16)
+                            .font(.body)
+                            .foregroundColor(.gray.opacity(0.8))
+                        
+                    }
+                    .allowsHitTesting(false)
+                }
+                .disableAutocorrection(true)
+                .textInputAutocapitalization(.never)
+                .textContentType(.URL)
+                .onSubmit {
+                    if($searchText.wrappedValue.isValidUrl()) {
+                        openWebsite(url: $searchText.wrappedValue)
+                    } else if($searchText.wrappedValue != "") {
+                        openWebsite(url: "google.com/search?q=\($searchText.wrappedValue.replacingOccurrences(of: " ", with: "+"))")
+                    }
+                    $searchText.wrappedValue = ""
+                }
+                Section(header: Text("FAVOURITES")) {
+                    FavouritesList()
+                }
+                
+            }
+            .navigationTitle("Browoser")
         }
-        .padding()
+        .environmentObject(favourites)
     }
 }
 
