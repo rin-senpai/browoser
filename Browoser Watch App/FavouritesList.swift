@@ -26,20 +26,6 @@ struct FavouritesList: View {
                     }
                 }
         }
-            
-        NavigationLink(destination: FavouriteView()) {
-            HStack(spacing: 10) {
-                Image(systemName: "heart")
-                    .foregroundColor(.pink)
-                    .padding(.leading, 4)
-                    .opacity(0)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .overlay(alignment: .center) {
-                Text("Add")
-                    .foregroundColor(.blue)
-            }
-        }
     }
 }
 

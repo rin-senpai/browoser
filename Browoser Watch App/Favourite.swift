@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 class Favourites: ObservableObject {
     private var websites: Set<Website>
@@ -46,10 +45,10 @@ class Favourites: ObservableObject {
         save()
     }
     
-    func edit(_ old_website: Website, _ new_website: Website) {
+    func edit(_ oldWebsite: Website, _ newWebsite: Website) {
         objectWillChange.send()
-        websites.remove(old_website)
-        websites.insert(new_website)
+        websites.remove(oldWebsite)
+        websites.insert(newWebsite)
         save()
     }
     

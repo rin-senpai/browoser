@@ -54,14 +54,15 @@ struct FavouriteView: View {
                         
                     } label: {
                         Text(edit ? "Save" : "Add")
-                            .foregroundColor(.blue)
+                            
                     }
+                    .buttonStyle(.borderedProminent)
                 }
                 .navigationTitle(edit ? "Edit Favourite" : "Add Favourite")
                 .autocorrectionDisabled(true)
             }
+            .containerBackground(.pink.opacity(0.4).gradient, for: .navigation)
         }
-
     }
 }
 
