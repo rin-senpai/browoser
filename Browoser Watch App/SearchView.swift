@@ -87,7 +87,7 @@ struct SearchView: View {
                     Text("How empty...")
                         .font(.subheadline)
                         .padding()
-                    
+                    Image("how empty...")
                 }
             }
         }
