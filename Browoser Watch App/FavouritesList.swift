@@ -19,7 +19,7 @@ struct FavouritesList: View {
                     } label: {
                         Image(systemName: "trash")
                     }
-                    .tint(.pink)
+                    .tint(.accentColor)
                     
                     NavigationLink(destination: FavouriteView(website: website)) {
                         Image(systemName: "pencil")

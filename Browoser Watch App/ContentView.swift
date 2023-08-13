@@ -28,7 +28,7 @@ struct ContentView: View {
                     NavigationLink(destination: FavouriteView()) {
                         Text("Add")
                             .padding()
-                            .foregroundStyle(.pink)
+                            .foregroundStyle(.tint)
                     }
                 }
                 

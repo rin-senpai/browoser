@@ -73,13 +73,13 @@ struct SearchView: View {
                             .padding(.leading)
                     }
                     .navigationTitle("Search")
-                    .containerBackground(.pink.opacity(0.4).gradient, for: .navigation)
+                    .containerBackground(Color("AccentColor").opacity(0.4).gradient, for: .navigation)
                     Button {
                         recents.clear()
                         self.presentationMode.wrappedValue.dismiss()
                     } label: {
                         Text("Clear")
-                            .foregroundStyle(.pink)
+                            .foregroundStyle(.tint)
                     }
                     .buttonStyle(.bordered)
                 } else {

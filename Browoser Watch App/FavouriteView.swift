@@ -61,7 +61,7 @@ struct FavouriteView: View {
                 .navigationTitle(edit ? "Edit Favourite" : "Add Favourite")
                 .autocorrectionDisabled(true)
             }
-            .containerBackground(.pink.opacity(0.4).gradient, for: .navigation)
+            .containerBackground(Color("AccentColor").opacity(0.4).gradient, for: .navigation)
         }
     }
 }
