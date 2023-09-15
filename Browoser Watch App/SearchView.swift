@@ -94,7 +94,9 @@ struct SearchView: View {
     }
 }
 
-#Preview {
-    SearchView()
-        .environmentObject(Recents())
+struct SearchView_Previews: PreviewProvider {
+    static var previews: some View {
+        SearchView()
+            .environmentObject(Recents())
+    }
 }
