@@ -6,25 +6,39 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct FavouritesList: View {
-    @EnvironmentObject var favourites: Favourites
+    @Environment(\.modelContext) private var modelContext
+    
+    @Query(sort: \Favourite.name) var favourites: [Favourite]
     
     var body: some View {
-        ForEach(favourites.getWebsites().sorted{$0.name < $1.name}) { website in
-            WebsiteButton(name: website.name, url: website.url)
-                .swipeActions {
-                    Button {
-                        favourites.remove(website)
-                    } label: {
-                        Image(systemName: "trash")
+        List {
+            ForEach(favourites) { favourite in
+                WebsiteButton(name: favourite.name, url: favourite.url)
+                    .swipeActions {
+                        Button {
+                            modelContext.delete(favourite)
+                        } label: {
+                            Image(systemName: "trash")
+                        }
+                        .tint(.pink)
+                        
+                        NavigationLink(destination: FavouriteView(favourite: favourite)) {
+                            Image(systemName: "pencil")
+                        }
                     }
-                    .tint(.accentColor)
-                    
-                    NavigationLink(destination: FavouriteView(website: website)) {
-                        Image(systemName: "pencil")
-                    }
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .bottomBar) {
+                NavigationLink(destination: FavouriteView()) {
+                    Text("Add")
+                        .padding()
+                        .foregroundStyle(.pink)
                 }
+            }
         }
     }
 }
@@ -56,9 +70,6 @@ struct WebsiteButton: View {
     }
 }
 
-struct FavouritesList_Previews: PreviewProvider {
-    static var previews: some View {
-        FavouritesList()
-            .environmentObject(Favourites())
-    }
+#Preview {
+    FavouritesList()
 }

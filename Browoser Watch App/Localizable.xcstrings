@@ -1,0 +1,161 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hi, I'm Browoser! Do you have anything to ask?"
+          }
+        }
+      }
+    },
+    "2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiiiiii, if you have any questions ask away!!"
+          }
+        }
+      }
+    },
+    "3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "owo uwu nya what you want desu ka nyan?"
+          }
+        }
+      }
+    },
+    "4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Why am I here... Just to answer your questions?"
+          }
+        }
+      }
+    },
+    "5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WHAT DO YOU WANT I WAS BUSY PLAYING WITH MY SENPAI'S KOUHAI??!!????!!!!??"
+          }
+        }
+      }
+    },
+    "6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "let's goooooo more ai in your favourite apps!!!!!!!"
+          }
+        }
+      }
+    },
+    "7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "btw this message is randomised so yeah good to know"
+          }
+        }
+      }
+    },
+    "8" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "you love me right? you'll do anything I say right????"
+          }
+        }
+      }
+    },
+    "9" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ask something it's my only purpose my true meaning in life please"
+          }
+        }
+      }
+    },
+    "10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Congratulations this is the least probable message!!"
+          }
+        }
+      }
+    },
+    "Add" : {
+
+    },
+    "Add Favourite" : {
+
+    },
+    "Browse" : {
+
+    },
+    "Chat" : {
+
+    },
+    "Clear" : {
+
+    },
+    "Edit Favourite" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "How empty..." : {
+
+    },
+    "Message..." : {
+
+    },
+    "Name" : {
+
+    },
+    "Recents" : {
+
+    },
+    "Save" : {
+
+    },
+    "Search" : {
+
+    },
+    "URL" : {
+
+    }
+  },
+  "version" : "1.0"
+}

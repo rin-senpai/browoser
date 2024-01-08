@@ -14,11 +14,18 @@
 		DB1F54EE2A87A46F00E270CB /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F54ED2A87A46F00E270CB /* Recent.swift */; };
 		DB1F54F02A87A70200E270CB /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F54EF2A87A70200E270CB /* Search.swift */; };
 		DB416E4B29D7BF5100BAF79B /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416E4A29D7BF5100BAF79B /* FavouriteView.swift */; };
+		DB7C10DE2B04F0AE00581114 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C10DD2B04F0AE00581114 /* ChatView.swift */; };
+		DB7C10E02B04F65C00581114 /* ChatSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C10DF2B04F65C00581114 /* ChatSettingsView.swift */; };
 		DB847A3129D6E209003369CD /* Browoser Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DB847A3029D6E209003369CD /* Browoser Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DB847A3629D6E209003369CD /* BrowoserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A3529D6E209003369CD /* BrowoserApp.swift */; };
 		DB847A3829D6E209003369CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A3729D6E209003369CD /* ContentView.swift */; };
 		DB847A3A29D6E20A003369CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB847A3929D6E20A003369CD /* Assets.xcassets */; };
 		DB847A3D29D6E20A003369CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */; };
+		DBBB2ECF2B47C3780017B06E /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBB2ECE2B47C3780017B06E /* APIKey.swift */; };
+		DBBB2ED12B47C3C90017B06E /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBBB2ED02B47C3C90017B06E /* GenerativeAI-Info.plist */; };
+		DBBB2ED42B47C4520017B06E /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = DBBB2ED32B47C4520017B06E /* GoogleGenerativeAI */; };
+		DBBB2EDE2B4BE7740017B06E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DBBB2EDD2B4BE7740017B06E /* Localizable.xcstrings */; };
+		DBBB2EE02B4BEDF20017B06E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DBBB2EDF2B4BEDF20017B06E /* .gitignore */; };
 		DBFBBBA529D7FEDC00AC1F08 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFBBBA429D7FEDC00AC1F08 /* Favourite.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +89,8 @@
 		DB1F54ED2A87A46F00E270CB /* Recent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
 		DB1F54EF2A87A70200E270CB /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		DB416E4A29D7BF5100BAF79B /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		DB7C10DD2B04F0AE00581114 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		DB7C10DF2B04F65C00581114 /* ChatSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSettingsView.swift; sourceTree = "<group>"; };
 		DB847A2A29D6E209003369CD /* Browoser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browoser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB847A3029D6E209003369CD /* Browoser Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Browoser Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB847A3529D6E209003369CD /* BrowoserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowoserApp.swift; sourceTree = "<group>"; };
@@ -90,6 +99,10 @@
 		DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB847A4229D6E20A003369CD /* Browoser Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Browoser Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB847A4C29D6E20A003369CD /* Browoser Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Browoser Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBB2ECE2B47C3780017B06E /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		DBBB2ED02B47C3C90017B06E /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		DBBB2EDD2B4BE7740017B06E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		DBBB2EDF2B4BEDF20017B06E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DBFBBBA429D7FEDC00AC1F08 /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBB2ED42B47C4520017B06E /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				DB847A3429D6E209003369CD /* Browoser Watch App */,
+				DBBB2EDF2B4BEDF20017B06E /* .gitignore */,
 				DB847A2B29D6E209003369CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -140,17 +155,21 @@
 		DB847A3429D6E209003369CD /* Browoser Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				DBBB2ECD2B47C3550017B06E /* APIKey */,
 				DB847A3529D6E209003369CD /* BrowoserApp.swift */,
 				DB847A3729D6E209003369CD /* ContentView.swift */,
+				DB7C10DD2B04F0AE00581114 /* ChatView.swift */,
 				DB0B6F0D29D7C9EE0083085B /* FavouritesList.swift */,
 				DB416E4A29D7BF5100BAF79B /* FavouriteView.swift */,
 				DB1F54EB2A877C3500E270CB /* SearchView.swift */,
+				DB7C10DF2B04F65C00581114 /* ChatSettingsView.swift */,
 				DB0B6F0B29D7C9510083085B /* Website.swift */,
 				DB1F54EF2A87A70200E270CB /* Search.swift */,
 				DBFBBBA429D7FEDC00AC1F08 /* Favourite.swift */,
 				DB1F54ED2A87A46F00E270CB /* Recent.swift */,
 				DB0B6F0F29D7CA7D0083085B /* Extensions.swift */,
 				DB847A3929D6E20A003369CD /* Assets.xcassets */,
+				DBBB2EDD2B4BE7740017B06E /* Localizable.xcstrings */,
 				DB847A3B29D6E20A003369CD /* Preview Content */,
 			);
 			path = "Browoser Watch App";
@@ -162,6 +181,15 @@
 				DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBBB2ECD2B47C3550017B06E /* APIKey */ = {
+			isa = PBXGroup;
+			children = (
+				DBBB2ECE2B47C3780017B06E /* APIKey.swift */,
+				DBBB2ED02B47C3C90017B06E /* GenerativeAI-Info.plist */,
+			);
+			path = APIKey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +226,9 @@
 			dependencies = (
 			);
 			name = "Browoser Watch App";
+			packageProductDependencies = (
+				DBBB2ED32B47C4520017B06E /* GoogleGenerativeAI */,
+			);
 			productName = "Browoser Watch App";
 			productReference = DB847A3029D6E209003369CD /* Browoser Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -246,7 +277,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					DB847A2929D6E209003369CD = {
 						CreatedOnToolsVersion = 14.2;
@@ -273,6 +304,9 @@
 				Base,
 			);
 			mainGroup = DB847A2329D6E209003369CD;
+			packageReferences = (
+				DBBB2ED22B47C4510017B06E /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			productRefGroup = DB847A2B29D6E209003369CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,8 +331,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBB2EE02B4BEDF20017B06E /* .gitignore in Resources */,
 				DB847A3D29D6E20A003369CD /* Preview Assets.xcassets in Resources */,
 				DB847A3A29D6E20A003369CD /* Assets.xcassets in Resources */,
+				DBBB2EDE2B4BE7740017B06E /* Localizable.xcstrings in Resources */,
+				DBBB2ED12B47C3C90017B06E /* GenerativeAI-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,11 +364,14 @@
 				DBFBBBA529D7FEDC00AC1F08 /* Favourite.swift in Sources */,
 				DB0B6F1029D7CA7D0083085B /* Extensions.swift in Sources */,
 				DB0B6F0E29D7C9EE0083085B /* FavouritesList.swift in Sources */,
+				DB7C10DE2B04F0AE00581114 /* ChatView.swift in Sources */,
+				DB7C10E02B04F65C00581114 /* ChatSettingsView.swift in Sources */,
 				DB1F54EC2A877C3500E270CB /* SearchView.swift in Sources */,
 				DB416E4B29D7BF5100BAF79B /* FavouriteView.swift in Sources */,
 				DB847A3629D6E209003369CD /* BrowoserApp.swift in Sources */,
 				DB1F54F02A87A70200E270CB /* Search.swift in Sources */,
 				DB1F54EE2A87A46F00E270CB /* Recent.swift in Sources */,
+				DBBB2ECF2B47C3780017B06E /* APIKey.swift in Sources */,
 				DB0B6F0C29D7C9510083085B /* Website.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -437,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -559,10 +601,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = CKYTN2QU34;
 				INFOPLIST_KEY_CFBundleDisplayName = Browoser;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = rin.Browoser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -577,10 +619,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = CKYTN2QU34;
 				INFOPLIST_KEY_CFBundleDisplayName = Browoser;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = rin.Browoser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -723,6 +765,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBBB2ED22B47C4510017B06E /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBBB2ED32B47C4520017B06E /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBBB2ED22B47C4510017B06E /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB847A2429D6E209003369CD /* Project object */;
 }

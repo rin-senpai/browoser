@@ -7,40 +7,49 @@
 
 import SwiftUI
 
+enum SelectedTab {
+    case browse
+    case chat
+}
+
 struct ContentView: View {
-    @StateObject var favourites = Favourites()
-    @StateObject var recents = Recents()
+    @State var selectedTab: SelectedTab = SelectedTab.browse
 
     var body: some View {
         NavigationStack {
-            List {
+            TabView(selection: $selectedTab) {
                 FavouritesList()
-            }
-            
-            .navigationTitle("Browoser")
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    NavigationLink(destination: SearchView()) {
-                        Image(systemName: "magnifyingglass").foregroundStyle(.tint)
+                    .tag(SelectedTab.browse)
+                    .navigationTitle {
+                        Text("Browse").foregroundStyle(.pink)
                     }
-                }
-                ToolbarItem(placement: .bottomBar) {
-                    NavigationLink(destination: FavouriteView()) {
-                        Text("Add")
-                            .padding()
-                            .foregroundStyle(.tint)
-                    }
-                }
+                    .containerBackground(.black, for: .tabView)
                 
+                ChatView()
+                    .tag(SelectedTab.chat)
+                    .navigationTitle {
+                        Text("Chat").foregroundStyle(.blue)
+                    }
+                    .containerBackground(.black, for: .tabView)
+            }
+            .tabViewStyle(.carousel)
+            .toolbar {
+                if selectedTab == SelectedTab.browse {
+                    ToolbarItem(placement: .topBarLeading) {
+                        NavigationLink(destination: SearchView()) {
+                            Image(systemName: "magnifyingglass").foregroundStyle(.pink)
+                        }
+                    }
+                }
             }
         }
-        .environmentObject(favourites)
-        .environmentObject(recents)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
+        .modelContainer(for: [
+            Favourite.self,
+            Recent.self
+        ])
 }

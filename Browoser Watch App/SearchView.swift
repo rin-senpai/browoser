@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct SearchView: View {
-    @EnvironmentObject var recents: Recents
+    @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
+    
     @State private var searchText: String = ""
     
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Query(sort: \Recent.created, order: .reverse) var recents: [Recent]
     
     func search(text: String) {
         if(text.isValidUrl()) {
@@ -22,81 +25,85 @@ struct SearchView: View {
     }
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                TextField(
-                    "",
-                    text: $searchText
-                )
-                .frame(height: 48)
-                .clipShape(RoundedRectangle(cornerRadius: .infinity))
-                .padding(.vertical)
-                .submitLabel(.search)
-                .overlay(alignment: .leading) {
-                    HStack {
-                        Image(systemName: "magnifyingglass").foregroundStyle(.tint)
-                            .offset(x: 16, y: 0)
-                        Text("Search")
-                            .padding(.leading, 18)
-                            .font(.caption)
-                            .foregroundStyle(.gray.opacity(0.8))
-                        
-                    }
-                    .allowsHitTesting(false)
+        ScrollView {
+            TextField(
+                "",
+                text: $searchText
+            )
+            .tint(.pink)
+            .frame(height: 48)
+            .clipShape(RoundedRectangle(cornerRadius: .infinity))
+            .padding(.vertical)
+            .submitLabel(.search)
+            .overlay(alignment: .leading) {
+                HStack {
+                    Image(systemName: "magnifyingglass").foregroundStyle(.pink)
+                        .offset(x: 16, y: 0)
+                    Text("Search")
+                        .padding(.leading, 18)
+                        .font(.caption)
+                        .foregroundStyle(.gray.opacity(0.8))
+                    
                 }
-                .disableAutocorrection(true)
-                .textInputAutocapitalization(.never)
-                .textContentType(.URL)
-                .onSubmit {
-                    search(text: $searchText.wrappedValue)
-                    recents.add(Search(text: $searchText.wrappedValue, date: Date()))
-                    $searchText.wrappedValue = ""
-                }
-                
-                if (!recents.isEmpty()) {
-                    Section {
-                        ForEach(recents.getSearches().sorted{$0.date > $1.date}) { recent in
-                            Button {
-                                search(text: recent.text)
-                                recents.edit(recent, Search(text: recent.text, date: Date()))
-                            } label: {
-                                Text(recent.text)
-                                    .font(.caption)
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                            }
-                            .buttonBorderShape(.roundedRectangle)
+                .allowsHitTesting(false)
+            }
+            .disableAutocorrection(true)
+            .textInputAutocapitalization(.never)
+            .textContentType(.URL)
+            .onSubmit {
+                search(text: $searchText.wrappedValue)
+                let newRecent = Recent(query: $searchText.wrappedValue)
+                modelContext.insert(newRecent)
+                $searchText.wrappedValue = ""
+            }
+            
+            if (!recents.isEmpty) {
+                Section {
+                    ForEach(recents) { recent in
+                        Button {
+                            search(text: recent.query)
+                            recent.created = Date()
+                        } label: {
+                            Text(recent.query)
+                                .font(.caption)
+                                .frame(maxWidth: .infinity, alignment: .leading)
                         }
-                    } header: {
-                        Text("Recents")
-                            .font(.subheadline)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.leading)
+                        .buttonBorderShape(.roundedRectangle)
                     }
-                    .navigationTitle("Search")
-                    .containerBackground(Color("AccentColor").opacity(0.4).gradient, for: .navigation)
-                    Button {
-                        recents.clear()
-                        self.presentationMode.wrappedValue.dismiss()
-                    } label: {
-                        Text("Clear")
-                            .foregroundStyle(.tint)
-                    }
-                    .buttonStyle(.bordered)
-                } else {
-                    Spacer()
-                    Text("How empty...")
+                } header: {
+                    Text("Recents")
                         .font(.subheadline)
-                        .padding()
-                    Image("how empty...")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading)
                 }
+                .navigationTitle {
+                    Text("Search").foregroundStyle(.pink)
+                }
+                .containerBackground(Color("AccentColor").opacity(0.4).gradient, for: .navigation)
+                Button {
+                    do {
+                        try modelContext.delete(model: Recent.self)
+                    } catch {
+                        fatalError(error.localizedDescription)
+                    }
+                    dismiss()
+                } label: {
+                    Text("Clear")
+                        .foregroundStyle(.pink)
+                }
+                .buttonStyle(.bordered)
+            } else {
+                Spacer()
+                Text("How empty...")
+                    .font(.subheadline)
+                    .padding()
+                Image("how empty...")
             }
         }
     }
 }
 
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
-            .environmentObject(Recents())
-    }
+#Preview {
+    SearchView()
+        .modelContainer(for: Recent.self)
 }
