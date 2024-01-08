@@ -15,7 +15,6 @@
 		DB1F54F02A87A70200E270CB /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F54EF2A87A70200E270CB /* Search.swift */; };
 		DB416E4B29D7BF5100BAF79B /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB416E4A29D7BF5100BAF79B /* FavouriteView.swift */; };
 		DB7C10DE2B04F0AE00581114 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C10DD2B04F0AE00581114 /* ChatView.swift */; };
-		DB7C10E02B04F65C00581114 /* ChatSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C10DF2B04F65C00581114 /* ChatSettingsView.swift */; };
 		DB847A3129D6E209003369CD /* Browoser Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DB847A3029D6E209003369CD /* Browoser Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DB847A3629D6E209003369CD /* BrowoserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A3529D6E209003369CD /* BrowoserApp.swift */; };
 		DB847A3829D6E209003369CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB847A3729D6E209003369CD /* ContentView.swift */; };
@@ -90,7 +89,6 @@
 		DB1F54EF2A87A70200E270CB /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		DB416E4A29D7BF5100BAF79B /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
 		DB7C10DD2B04F0AE00581114 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		DB7C10DF2B04F65C00581114 /* ChatSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSettingsView.swift; sourceTree = "<group>"; };
 		DB847A2A29D6E209003369CD /* Browoser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Browoser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB847A3029D6E209003369CD /* Browoser Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Browoser Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB847A3529D6E209003369CD /* BrowoserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowoserApp.swift; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 				DB0B6F0D29D7C9EE0083085B /* FavouritesList.swift */,
 				DB416E4A29D7BF5100BAF79B /* FavouriteView.swift */,
 				DB1F54EB2A877C3500E270CB /* SearchView.swift */,
-				DB7C10DF2B04F65C00581114 /* ChatSettingsView.swift */,
 				DB0B6F0B29D7C9510083085B /* Website.swift */,
 				DB1F54EF2A87A70200E270CB /* Search.swift */,
 				DBFBBBA429D7FEDC00AC1F08 /* Favourite.swift */,
@@ -365,7 +362,6 @@
 				DB0B6F1029D7CA7D0083085B /* Extensions.swift in Sources */,
 				DB0B6F0E29D7C9EE0083085B /* FavouritesList.swift in Sources */,
 				DB7C10DE2B04F0AE00581114 /* ChatView.swift in Sources */,
-				DB7C10E02B04F65C00581114 /* ChatSettingsView.swift in Sources */,
 				DB1F54EC2A877C3500E270CB /* SearchView.swift in Sources */,
 				DB416E4B29D7BF5100BAF79B /* FavouriteView.swift in Sources */,
 				DB847A3629D6E209003369CD /* BrowoserApp.swift in Sources */,
@@ -537,7 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Browoser Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = CKYTN2QU34;
 				ENABLE_PREVIEWS = YES;
@@ -549,7 +545,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = rin.Browoser.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -569,7 +565,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Browoser Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = CKYTN2QU34;
 				ENABLE_PREVIEWS = YES;
@@ -581,7 +577,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = rin.Browoser.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
