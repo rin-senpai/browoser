@@ -19,7 +19,7 @@ struct ChatView: View {
     @State var scrollViewSize: CGSize = .zero
     
     let model = GenerativeModel(
-        name: "gemini-1.5-flash",
+        name: "gemini-1.5-flash-latest",
         apiKey: APIKey.default,
         safetySettings: [
             SafetySetting(harmCategory: .dangerousContent, threshold: .blockNone),
