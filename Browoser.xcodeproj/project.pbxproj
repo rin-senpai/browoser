@@ -759,7 +759,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		DBBB2ED22B47C4510017B06E /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/generative-ai-swift";
+			repositoryURL = "https://github.com/rin-senpai/generative-ai-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.5.4;
