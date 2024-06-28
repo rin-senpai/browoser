@@ -768,7 +768,7 @@
 			repositoryURL = "https://github.com/google/generative-ai-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.4.4;
+				minimumVersion = 0.5.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
