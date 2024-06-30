@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243426332C2F5CF800BFCD60 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 243426322C2F5CF800BFCD60 /* GoogleGenerativeAI */; };
 		DB0B6F0C29D7C9510083085B /* Website.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B6F0B29D7C9510083085B /* Website.swift */; };
 		DB0B6F0E29D7C9EE0083085B /* FavouritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B6F0D29D7C9EE0083085B /* FavouritesList.swift */; };
 		DB0B6F1029D7CA7D0083085B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B6F0F29D7CA7D0083085B /* Extensions.swift */; };
@@ -22,7 +23,6 @@
 		DB847A3D29D6E20A003369CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB847A3C29D6E20A003369CD /* Preview Assets.xcassets */; };
 		DBBB2ECF2B47C3780017B06E /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBB2ECE2B47C3780017B06E /* APIKey.swift */; };
 		DBBB2ED12B47C3C90017B06E /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBBB2ED02B47C3C90017B06E /* GenerativeAI-Info.plist */; };
-		DBBB2ED42B47C4520017B06E /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = DBBB2ED32B47C4520017B06E /* GoogleGenerativeAI */; };
 		DBBB2EDE2B4BE7740017B06E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DBBB2EDD2B4BE7740017B06E /* Localizable.xcstrings */; };
 		DBBB2EE02B4BEDF20017B06E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DBBB2EDF2B4BEDF20017B06E /* .gitignore */; };
 		DBFBBBA529D7FEDC00AC1F08 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFBBBA429D7FEDC00AC1F08 /* Favourite.swift */; };
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBBB2ED42B47C4520017B06E /* GoogleGenerativeAI in Frameworks */,
+				243426332C2F5CF800BFCD60 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,12 +130,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		243426312C2F5CF800BFCD60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB847A2329D6E209003369CD = {
 			isa = PBXGroup;
 			children = (
 				DB847A3429D6E209003369CD /* Browoser Watch App */,
 				DBBB2EDF2B4BEDF20017B06E /* .gitignore */,
 				DB847A2B29D6E209003369CD /* Products */,
+				243426312C2F5CF800BFCD60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,7 +232,7 @@
 			);
 			name = "Browoser Watch App";
 			packageProductDependencies = (
-				DBBB2ED32B47C4520017B06E /* GoogleGenerativeAI */,
+				243426322C2F5CF800BFCD60 /* GoogleGenerativeAI */,
 			);
 			productName = "Browoser Watch App";
 			productReference = DB847A3029D6E209003369CD /* Browoser Watch App.app */;
@@ -761,14 +769,14 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rin-senpai/generative-ai-swift";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.4;
+				kind = revision;
+				revision = 9a5df1bb2c97950de383fc5835d5a8b446ae925b;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DBBB2ED32B47C4520017B06E /* GoogleGenerativeAI */ = {
+		243426322C2F5CF800BFCD60 /* GoogleGenerativeAI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DBBB2ED22B47C4510017B06E /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
 			productName = GoogleGenerativeAI;

@@ -6,8 +6,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/rin-senpai/generative-ai-swift",
       "state" : {
-        "revision" : "54784005b57c2235a7669e0c12e8dafa68f0ca5f",
-        "version" : "0.5.4"
+        "revision" : "9a5df1bb2c97950de383fc5835d5a8b446ae925b"
       }
     }
   ],
