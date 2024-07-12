@@ -81,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2458676C2C41019B006485B8 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		DB0B6F0B29D7C9510083085B /* Website.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Website.swift; sourceTree = "<group>"; };
 		DB0B6F0D29D7C9EE0083085B /* FavouritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
 		DB0B6F0F29D7CA7D0083085B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -137,9 +138,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2458676A2C410148006485B8 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2458676C2C41019B006485B8 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 		DB847A2329D6E209003369CD = {
 			isa = PBXGroup;
 			children = (
+				2458676A2C410148006485B8 /* ci_scripts */,
 				DB847A3429D6E209003369CD /* Browoser Watch App */,
 				DBBB2EDF2B4BEDF20017B06E /* .gitignore */,
 				DB847A2B29D6E209003369CD /* Products */,
