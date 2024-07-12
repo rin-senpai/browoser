@@ -770,7 +770,7 @@
 			repositoryURL = "https://github.com/rin-senpai/generative-ai-swift";
 			requirement = {
 				kind = revision;
-				revision = 9a5df1bb2c97950de383fc5835d5a8b446ae925b;
+				revision = 4300d01ddfe498306c99f73c337d71eddeedb2b1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
