@@ -81,7 +81,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2458676C2C41019B006485B8 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		DB0B6F0B29D7C9510083085B /* Website.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Website.swift; sourceTree = "<group>"; };
 		DB0B6F0D29D7C9EE0083085B /* FavouritesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesList.swift; sourceTree = "<group>"; };
 		DB0B6F0F29D7CA7D0083085B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -138,18 +137,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2458676A2C410148006485B8 /* ci_scripts */ = {
-			isa = PBXGroup;
-			children = (
-				2458676C2C41019B006485B8 /* ci_post_clone.sh */,
-			);
-			path = ci_scripts;
-			sourceTree = "<group>";
-		};
 		DB847A2329D6E209003369CD = {
 			isa = PBXGroup;
 			children = (
-				2458676A2C410148006485B8 /* ci_scripts */,
 				DB847A3429D6E209003369CD /* Browoser Watch App */,
 				DBBB2EDF2B4BEDF20017B06E /* .gitignore */,
 				DB847A2B29D6E209003369CD /* Products */,
@@ -231,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB847A5629D6E20A003369CD /* Build configuration list for PBXNativeTarget "Browoser Watch App" */;
 			buildPhases = (
+				2458676E2C41095D006485B8 /* ShellScript */,
 				DB847A2C29D6E209003369CD /* Sources */,
 				DB847A2D29D6E209003369CD /* Frameworks */,
 				DB847A2E29D6E209003369CD /* Resources */,
@@ -369,6 +360,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2458676E2C41095D006485B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(PROJECT_DIR)/Browoser Watch App/APIKey/GenerativeAI-Info.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[-n $GEMINI_API_KEY]];\nthen\n    cd \"$PROJECT_DIR/Browoser Watch App/APIKey\"\n    /usr/libexec/PlistBuddy \"GenerativeAI-Info.plist\"\n    /usr/libexec/PlistBuddy -c \"add API_KEY string $GEMINI_API_KEY\" GenerativeAI-Info.plist\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB847A2C29D6E209003369CD /* Sources */ = {
@@ -614,7 +626,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CKYTN2QU34;
 				INFOPLIST_KEY_CFBundleDisplayName = Browoser;
 				MARKETING_VERSION = 2.0.1;
@@ -631,7 +643,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CKYTN2QU34;
 				INFOPLIST_KEY_CFBundleDisplayName = Browoser;
 				MARKETING_VERSION = 2.0.1;
