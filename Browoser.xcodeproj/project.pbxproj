@@ -378,7 +378,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ -n $GEMINI_API_KEY]];\nthen\n    cd \"$PROJECT_DIR/Browoser Watch App/APIKey\"\n    /usr/libexec/PlistBuddy \"GenerativeAI-Info.plist\"\n    /usr/libexec/PlistBuddy -c \"add API_KEY string $GEMINI_API_KEY\" GenerativeAI-Info.plist\nfi\nexit 0\n";
+			shellScript = "if [[ -n $GEMINI_API_KEY ]];\nthen\n    cd \"$PROJECT_DIR/Browoser Watch App/APIKey\"\n    /usr/libexec/PlistBuddy \"GenerativeAI-Info.plist\"\n    /usr/libexec/PlistBuddy -c \"add API_KEY string $GEMINI_API_KEY\" GenerativeAI-Info.plist\nfi\nexit 0\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
